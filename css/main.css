@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "mark";
+  src: url("../fonts/MarkoOne-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "mark";
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+}
+
+.clock {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 8px solid #fff;
+  border-radius: 50%;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #2196f3;
+  z-index: 10;
+}
+
+.clock .hour, .clock .hour .hr,
+.clock .min,
+.clock .min .mn,
+.clock .sec,
+.clock .sec .sc {
+  position: absolute;
+}
+
+.clock .hour, .clock .hour .hr {
+  width: 200px;
+  height: 200px;
+}
+
+.clock .hour .hr::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 100px;
+  background-color: #fff;
+}
+
+
+.clock .min,
+.clock .min .mn {
+  width: 230px;
+  height: 230px;
+}
+
+.clock .min .mn::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  background-color: #fff;
+}
+
+
+.clock .sec,
+.clock .sec .sc {
+  width: 250px;
+  height: 250px;
+}
+
+.clock .sec .sc::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background-color: #2196f3;
+}
+
+.clock .hr,
+.clock .mn,
+.clock .sc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+}
+
+.digitalClock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.digitalClock div {
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.digitalClock div span {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 80px;
+  background: #2196f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 0 1px black;
+          box-shadow: 0 0 0 1px black;
+  font-size: 3em;
+}
+
+.digitalClock div span:nth-child(2) {
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #127fd6;
+}
+
+.digitalClock div:nth-child(2) span {
+  background: rgba(242, 4, 250, 0.849);
+}
+
+.digitalClock div:nth-child(2) span:nth-child(2) {
+  background: #d400db;
+}
+
+.digitalClock div:nth-child(3) span {
+  background: rgba(4, 250, 37, 0.877);
+}
+
+.digitalClock div:nth-child(3) span:nth-child(2) {
+  background: #04fa25;
+}
+
+.digitalClock div:last-child span {
+  background: #fff;
+  position: absolute;
+  top: 16px;
+  width: 60px;
+  height: 40px;
+  font-size: 1.5em;
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}

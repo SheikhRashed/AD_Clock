@@ -1,0 +1,25 @@
+{
+  "name": "analog_digital_clock",
+  "version": "1.0.0",
+  "description": "Make an Analog & Digital Minimalist clock Using Vanila javaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SheikhRashed/AD_Clock.git"
+  },
+  "keywords": [
+    "javaScript",
+    "HTML",
+    "SCSS",
+    "CSS"
+  ],
+  "author": "SHEIKH RASHED",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SheikhRashed/AD_Clock/issues"
+  },
+  "homepage": "https://github.com/SheikhRashed/AD_Clock#readme"
+}
